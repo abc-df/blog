@@ -209,3 +209,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+
+
+excerpt_separator: <!--more-->
+excerpt_type: html # text (default), html
