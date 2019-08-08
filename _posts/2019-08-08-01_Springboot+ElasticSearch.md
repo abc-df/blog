@@ -10,7 +10,8 @@ ElasticSearch是一个基于Lucene的搜索服务器。它提供了一个分布�
 
 
  <!--more-->
-#ElasticSearch安装(win10)
+# ElasticSearch安装(win10)
+
 1. 下载地址https://www.elastic.co/cn/downloads/elasticsearch (ZIP包)
 2. 解压ZIP,修改config目录下配置文件elasticsearch.yml
 
