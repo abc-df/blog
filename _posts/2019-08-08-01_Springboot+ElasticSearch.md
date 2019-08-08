@@ -124,10 +124,10 @@ node.data: true
   "tagline" : "You Know, for Search"
 }
 ```
-#ElasticSearch集群搭建(win10)
+# ElasticSearch集群搭建(win10)
 将解压后的压缩包复制多份，修改配置文件。
 
-##elasticsearch-head-master安装
+## elasticsearch-head-master安装
 1. 下载ZIP文件，https://github.com/mobz/elasticsearch-head
 2. 安装node，由于head插件本质上还是一个nodejs的工程，因此需要安装node，使用npm来安装依赖的包。
 3. 安装grunt，grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt
@@ -167,6 +167,7 @@ server.port=1111
 ```
 
 2. pom
+
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
