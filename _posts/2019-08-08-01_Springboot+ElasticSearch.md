@@ -12,9 +12,9 @@ ElasticSearch是一个基于Lucene的搜索服务器。它提供了一个分布�
  <!--more-->
 ## ElasticSearch安装(win10)
 
-1. 下载地址https://www.elastic.co/cn/downloads/elasticsearch (ZIP包)
+下载地址https://www.elastic.co/cn/downloads/elasticsearch (ZIP包)
 
-2. 解压ZIP,修改config目录下配置文件elasticsearch.yml
+解压ZIP,修改config目录下配置文件elasticsearch.yml
 
 
 ```java
@@ -112,9 +112,9 @@ node.master: true
 node.data: true
 ```
 
-3. 启动bin目录下elasticsearch.bat
+启动bin目录下elasticsearch.bat
 
-4. 浏览器输入http://localhost:9200/ ,显示如下证明安装成功
+浏览器输入http://localhost:9200/ ,显示如下证明安装成功
 
 ```java
  {
@@ -137,10 +137,13 @@ node.data: true
 
 ## elasticsearch-head-master安装
 
-1. 下载ZIP文件，https://github.com/mobz/elasticsearch-head
-2. 安装node，由于head插件本质上还是一个nodejs的工程，因此需要安装node，使用npm来安装依赖的包。
-3. 安装grunt，grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt
-4. 修改elasticsearch-head-master源码
+下载ZIP文件，https://github.com/mobz/elasticsearch-head
+
+安装node，由于head插件本质上还是一个nodejs的工程，因此需要安装node，使用npm来安装依赖的包。
+
+安装grunt，grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt
+
+修改elasticsearch-head-master源码
 
 ```js
 修改服务器监听地址(Gruntfile.js)
@@ -159,15 +162,17 @@ connect: {
 增加这一行：增加hostname属性，设置为*
 ```
 
-5. 先启动elasticsearch，进入elasticsearch-head-master，执行npm install （可能phantomjs耗时较长，最后启动nodejs: grunt server
+先启动elasticsearch，进入elasticsearch-head-master，执行npm install （可能phantomjs耗时较长，最后启动nodejs: grunt server
 
-6. 浏览器输入localhost:9100
+浏览器输入localhost:9100
 
 
 
 # Springboot集成elasticsearch（注意版本、注意版本、注意版本）
 
 spring data elasticsearch 和 elasticsearch版本一定要对应
+
+
 ![image](https://longdeja.github.io/blog/image/1565145633(1).png)
 
 ## 代码实现
