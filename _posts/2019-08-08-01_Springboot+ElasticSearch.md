@@ -131,7 +131,7 @@ node.data: true
 }
 ```
 
-## ElasticSearch集群搭建(win10)
+# ElasticSearch集群搭建(win10)
 
 将解压后的压缩包复制多份，修改配置文件。
 
