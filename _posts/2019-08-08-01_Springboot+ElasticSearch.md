@@ -125,13 +125,16 @@ node.data: true
 }
 ```
 # ElasticSearch集群搭建(win10)
+
 将解压后的压缩包复制多份，修改配置文件。
 
 ## elasticsearch-head-master安装
+
 1. 下载ZIP文件，https://github.com/mobz/elasticsearch-head
 2. 安装node，由于head插件本质上还是一个nodejs的工程，因此需要安装node，使用npm来安装依赖的包。
 3. 安装grunt，grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt
 4. 修改elasticsearch-head-master源码
+
 ```js
 修改服务器监听地址(Gruntfile.js)
 
@@ -148,17 +151,22 @@ connect: {
 
 增加这一行：增加hostname属性，设置为*
 ```
+
 5. 先启动elasticsearch，进入elasticsearch-head-master，执行npm install （可能phantomjs耗时较长，最后启动nodejs: grunt server
+
 6. 浏览器输入localhost:9100
 
 
 
 ## Springboot集成elasticsearch（注意版本、注意版本、注意版本）
+
 spring data elasticsearch 和 elasticsearch版本一定要对应
 ![image](https://longdeja.github.io/blog/image/1565145633(1).png)
 
 # 代码实现
+
 1. application.properties
+
 ```java
 spring.data.elasticsearch.cluster-name=my-application
 spring.data.elasticsearch.repositories.enabled=true
