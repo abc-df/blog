@@ -108,8 +108,11 @@ http.cors.allow-origin: "*"
 node.master: true
 node.data: true
 ```
+
 3. 启动bin目录下elasticsearch.bat
+
 4. 浏览器输入http://localhost:9200/ ,显示如下证明安装成功
+
 ```java
  {
   "name" : "master",
@@ -124,6 +127,7 @@ node.data: true
   "tagline" : "You Know, for Search"
 }
 ```
+
 # ElasticSearch集群搭建(win10)
 
 将解压后的压缩包复制多份，修改配置文件。
@@ -260,7 +264,9 @@ server.port=1111
 
 </project>
 ```
+
 3. 实体
+
 ```java
 @Document(indexName="bank3",type="account3")
 public class EsBlog implements Serializable {
@@ -296,7 +302,9 @@ public class EsBlog implements Serializable {
     }
 }
 ```
+
 4. controller
+
 ```java
  @Autowired
     private BlogSearchService blogSearchService;
@@ -323,7 +331,9 @@ public class EsBlog implements Serializable {
         blogSearchService.delete(id);
     }
 ```
+
 5. BlogSearchService
+
 ```java
 void save (EsBlog eb);
 
@@ -333,8 +343,11 @@ void save (EsBlog eb);
 
     void delete(Integer id);
 
+
 ```
+
 6. BlogSearchServiceImpl
+
 ```java
 @Service
 public class BlogSearchServiceImpl implements BlogSearchService {
@@ -369,7 +382,9 @@ public class BlogSearchServiceImpl implements BlogSearchService {
 }
 
 ```
+
 7. BlogRepository
+
 ```java
 public interface BlogRepository extends ElasticsearchRepository<EsBlog, Long> {
     List<EsBlog> findByFirstnameLikeOrLastnameLike(String firstname, String lastname);
