@@ -403,8 +403,8 @@ public interface BlogRepository extends ElasticsearchRepository<EsBlog, Long> {
 ```
 
 
-<!-- # 代码地址
-https://github.com/longDeJa/projects/tree/master/projects/springBoot%2BElasticsearch -->
+# 代码地址
+https://github.com/longDeJa/springBoot-Elasticsearch.git
 
 
 
