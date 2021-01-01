@@ -186,14 +186,16 @@
 
     <div class="show_info animated" style="display:none;">
         <div class="info_my">
-            <img style="width:50px;height:65px;" src="img/4.jpg" />
+          
             <div class="info_mem">
-                <div class="nickname">刘艳斌</div>
-                <div class="id">身份：佟晓龙的媳妇</div>
-                <div class="vote">性别：女</div>
+              
+                <div class="id">
+				我的心为你而跳，我的脚陪你走天涯海角，我的手拉着你幸福的走，
+				我的眼看着你美丽永不回头，爱上了你，我很开心，愿意陪着你这样慢慢到老!
+				</div>
             </div>
         </div>
-        <div class="intro">无论以后的路多么难走，就让我一直陪着你。</div>
+     
     </div>
 
     <bgsound src="img/123.mp3" loop="-1" />
@@ -332,7 +334,9 @@ let audioInfo = {
                 $('.show_info').removeClass(_in[rand_in]);
                 // 更改展示的图片
                 var img = document.getElementsByClassName('element')[CurPersonNum].getElementsByTagName('img')[0];
-                img.setAttribute('src', 'img/5.jpg');
+				var num=Math.floor(Math.random()*10+1)
+				var jpg="img/"+num+".jpg"
+                img.setAttribute('src', jpg);
                 ++CurPersonNum;
                 setTimeout(function() {
                     $('.show_info').addClass(_out[rand_out]);
@@ -346,8 +350,9 @@ let audioInfo = {
 
         // 生成虚拟数据
         for (var i = 0; i < 199; i++) {
+		  var num=Math.floor(Math.random()*10+1)
             personArray.push({
-                image: "img/5.jpg"
+                image: "img/"+num+".jpg"
             });
         }
 
